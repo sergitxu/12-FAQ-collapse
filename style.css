@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  background-color: #F0F0F0;
+}
+
+h1 {
+  margin: 50px 0 30px;
+  text-align: center;
+}
+
+.faq {
+  background-color: transparent;
+  border: 1px solid #9fa4e8;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.faq-question {
+  margin: 0 35px 0 0;
+}
+
+.faq-answer {
+  display: none;
+  margin: 30px 0 0;
+}
+
+.faq-toggle {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  font-size: 16px;
+  border-radius: 50%;
+}
+
+.faq-toggle .fa-times {
+  display: none;
+}
+
+.faq__active {
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq__active .faq-answer {
+  display: block;
+}
+
+.faq__active .faq-toggle {
+  background-color: #9fa4a8;
+  color: #FFF;
+}
+
+.faq__active .fa-times {
+  display: block;
+}
+
+.faq__active .fa-chevron-down {
+  display: none;
+}
+
+.faq__active::before, .faq__active::after {
+  content: '\f075';
+  font-family: 'Font Awesome 5 Free';
+  color: #2ecc71;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+}
+
+.faq__active::before {
+  color: #349edb;
+  top: -10px;
+  left: -30px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq-icon {
+  font-size: 0;
+}
+
+.faq-icon::before {
+  font-size: 14px;
+}
+/*# sourceMappingURL=style.css.map */
